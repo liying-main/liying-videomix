@@ -1,0 +1,200 @@
+/* 账号档案 */
+.account-page {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  align-items: start;
+  gap: 16px;
+}
+
+.account-page__profiles,
+.account-page__editor {
+  background: var(--qt-surface-strong);
+  border: 1px solid var(--qt-border);
+  border-radius: 14px;
+  box-shadow: var(--qt-shadow-md);
+}
+
+.account-page__profiles {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+  position: sticky;
+  top: 12px;
+}
+
+.account-page__profiles-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 2px 2px 8px;
+  border-bottom: 1px solid var(--qt-border);
+}
+
+.account-page__profiles-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--qt-text);
+}
+
+.account-page__profiles-subtitle {
+  margin: 3px 0 0;
+  font-size: 12px;
+  color: var(--qt-text-2);
+}
+
+.account-page__profile-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--qt-text);
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+
+.account-page__profile-item:hover {
+  background: var(--qt-primary-soft);
+}
+
+.account-page__profile-item--active {
+  background: color-mix(in srgb, var(--qt-primary) 14%, transparent);
+  border-color: color-mix(in srgb, var(--qt-primary) 35%, var(--qt-border));
+  box-shadow: inset 3px 0 0 var(--qt-primary-2);
+}
+
+.account-page__profile-name {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.account-page__profile-meta {
+  font-size: 12px;
+  color: var(--qt-text-2);
+}
+
+.account-page__editor {
+  padding: 22px 28px 26px;
+}
+
+.account-page__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.account-page__head-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.account-page__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--qt-text);
+}
+
+.account-page__hint {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--qt-text-2);
+}
+
+.account-page__name-row {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--qt-border);
+}
+
+.account-page__form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.account-page__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.account-page__field--name {
+  max-width: 520px;
+}
+
+.account-page__field--wide {
+  grid-column: 1 / -1;
+}
+
+.account-page__label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--qt-text-2);
+}
+
+.account-page__preview {
+  margin-top: 18px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--qt-border);
+  background: var(--qt-surface);
+}
+
+.account-page__preview-title {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--qt-primary-2);
+}
+
+.account-page__preview-text {
+  margin: 0;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--qt-text);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (width <= 1180px) {
+  .account-page {
+    grid-template-columns: 1fr;
+  }
+
+  .account-page__profiles {
+    position: static;
+  }
+
+  .account-page__form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 760px) {
+  .account-page__editor {
+    padding: 18px;
+  }
+
+  .account-page__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

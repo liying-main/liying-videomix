@@ -1,0 +1,6 @@
+.page-placeholder {
+  color: var(--vm-text-secondary, #64748b);
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}

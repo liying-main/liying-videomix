@@ -1,0 +1,248 @@
+.settings-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.settings-card {
+  border: 1px solid var(--qt-border);
+  background: var(--qt-surface-strong);
+  border-radius: 14px;
+  box-shadow: var(--qt-shadow-md) !important;
+}
+
+.settings-card :deep(.el-card__header) {
+  border-bottom: 1px solid var(--qt-border);
+  padding: 14px 20px;
+}
+
+.settings-card :deep(.el-card__body) {
+  padding: 18px 20px 20px;
+}
+
+.settings-card__title {
+  color: var(--qt-text);
+  letter-spacing: -0.02em;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.settings-card--inner {
+  box-shadow: none !important;
+}
+
+.settings-panel__collapse {
+  border: 0;
+}
+
+.settings-panel__collapse :deep(.el-collapse-item__header) {
+  border-bottom: 1px solid var(--qt-border);
+  min-height: 52px;
+  padding: 0 2px;
+}
+
+.settings-panel__collapse :deep(.el-collapse-item__wrap) {
+  background: transparent;
+  border-bottom: 0;
+}
+
+.settings-panel__collapse :deep(.el-collapse-item__content) {
+  padding: 14px 0 0;
+}
+
+.settings-panel__collapse-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.settings-panel__collapse-sub {
+  color: var(--qt-text-2);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.settings-rewrite-config {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.settings-rewrite-config__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-rewrite-config__hint {
+  color: var(--qt-text-2);
+  font-size: 0.875rem;
+}
+
+.settings-voice-key-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-voice-input {
+  width: 420px;
+  max-width: 100%;
+}
+
+/* 开源版：中转站 Key 的引导说明 */
+.settings-station-hint {
+  margin-top: 6px;
+  color: var(--qt-text-2);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.settings-clone-entry {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-clone-entry__hint {
+  color: var(--qt-text-2);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.settings-clone-voice {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.settings-clone-voice__section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-clone-voice__section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.settings-clone-voice__label {
+  color: var(--qt-text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.settings-clone-voice__count {
+  color: var(--qt-text-3);
+  font-size: 12px;
+}
+
+.settings-clone-voice__divider {
+  background: var(--qt-border);
+  height: 1px;
+}
+
+.settings-clone-voice__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings-clone-voice__file,
+.settings-clone-voice__hint {
+  color: var(--qt-text-2);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.settings-clone-voice__file {
+  word-break: break-all;
+  min-width: 0;
+}
+
+.settings-clone-voice__audio {
+  width: min(420px, 100%);
+}
+
+.settings-voice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 220px;
+  overflow: auto;
+}
+
+.settings-voice-list__item {
+  border: 1px solid var(--qt-border);
+  background: var(--qt-surface);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+}
+
+.settings-voice-list__name {
+  min-width: 0;
+  color: var(--qt-text);
+  word-break: break-all;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.settings-voice-list__empty {
+  color: var(--qt-text-2);
+  background: var(--qt-primary-soft);
+  border: 1px dashed var(--qt-border-strong);
+  border-radius: 10px;
+  padding: 14px 12px;
+  font-size: 12px;
+}
+
+.settings-clone-dialog__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.system-settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.system-settings-page__logs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.system-settings-page__collapse {
+  width: 100%;
+}
+
+.system-settings-page__logs-title {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.system-settings-page__logs-sub {
+  color: var(--qt-text-2);
+  font-size: 12px;
+  font-weight: 500;
+}

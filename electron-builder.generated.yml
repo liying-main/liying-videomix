@@ -1,0 +1,32 @@
+appId: com.liying.hunjian
+productName: 厉影AI混剪智能体
+directories:
+  buildResources: build
+  output: release
+files:
+  - dist/**
+  - "!dist/voices/**"
+  - "!dist/fonts/**"
+  - dist-electron/**
+  - package.json
+extraResources:
+  - from: resources/icon.png
+    to: app-icon.png
+win:
+  icon: build/icon.ico
+  executableName: liying-hunjian-ai
+  signAndEditExecutable: false
+  target:
+    - nsis
+nsis:
+  artifactName: ${name}-${version}-setup.${ext}
+  shortcutName: ${productName}
+  uninstallDisplayName: ${productName}
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+extraMetadata:
+  name: liying-videomix
+  description: 厉影AI混剪：免费开源本地视频合成客户端

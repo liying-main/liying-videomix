@@ -1,0 +1,77 @@
+:root {
+  --vm-bg: var(--qt-bg);
+  --vm-text: var(--qt-text);
+  --vm-text-secondary: var(--qt-text-2);
+  --vm-card-bg: var(--qt-card-bg);
+  --vm-border: var(--qt-border);
+  --vm-accent: var(--qt-primary);
+  --vm-accent-deep: var(--qt-primary-2);
+  --vm-accent-soft: var(--qt-primary-soft);
+  --vm-accent-light: color-mix(in srgb, var(--qt-primary) 10%, transparent);
+  --vm-surface: var(--qt-surface);
+  --vm-radius-xl: 16px;
+  --vm-radius-card: 14px;
+  --vm-radius-lg: 14px;
+  --vm-radius-md: 10px;
+  --vm-shadow-card: var(--qt-shadow-md);
+  --vm-shadow-pill: var(--qt-shadow-md);
+  --vm-shadow-soft: var(--qt-shadow-md);
+  --vm-shadow-hover: var(--qt-shadow-lg);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+  color: var(--qt-text);
+  background-color: var(--qt-bg);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--qt-primary) 40%, transparent) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--qt-primary) 40%, transparent);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.page-placeholder {
+  color: var(--vm-text-secondary);
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}

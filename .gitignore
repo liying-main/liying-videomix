@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-electron/
+release/
+
+# Local env & credentials
+.env
+.env.local
+.build-env
+.build-env.cmd
+
+# Runtime session data
+publish-browser-profiles/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.log
+
+# Runtime data (本地运行数据，不入库)
+cache/
+data/
+成片/
+工作缓存/
+混剪素材/
+backend/
+resources/backend/
+logs/
